@@ -1,0 +1,60 @@
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users/62ceddd65f01dcbaaf694494
+
+###
+POST http://localhost:3000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Homero",
+    "userName" : "HomeroUser",
+    "email" : "homerosimpson@gmail.com",
+    "company" : "Simpson Inc"
+}
+
+###
+PUT http://localhost:3000/api/users/62ceddd65f01dcbaaf694494 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Bart",
+    "username" : 14
+}
+
+###
+DELETE http://localhost:3000/api/users/62cedd4d5f01dcbaaf694492
+
+###
+POST http://localhost:3000/api/example/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+{"firstName" : "Lisa", "lastName" : "Simpson", "age" : 10}
+
+//---------------------------------------------------------------------------------------------------------------------
+
+GET http://localhost:3000/api/companies
+
+###
+GET http://localhost:3000/api/companies/62ceddd65f01dcbaaf694494
+
+###
+POST http://localhost:3000/api/companies/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Homero",
+}
+
+###
+PUT http://localhost:3000/api/companies/62ceddd65f01dcbaaf694494 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Bart",
+}
+
+###
+DELETE http://localhost:3000/api/users/62cedd4d5f01dcbaaf694492
+
